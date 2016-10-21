@@ -25,10 +25,10 @@ public class Q8 {
         while (player < 100) {
             //ask user for sum of dice
             System.out.println("Enter Sum of Dice");
-            
+
             //Store value in a dice variable
             int dice = input.nextInt();
-            
+
             //if the dice is 0 then terminate
             if (dice < 2 || dice > 12) {
                 System.out.println("You Quit!");
@@ -36,7 +36,7 @@ public class Q8 {
             }
             //get the player to move by adding dice with player
             player = player + dice;
-            
+
             //make if statement in case player lands on ladder or snake
             if (player == 9) {
                 System.out.println("Ladder!");
@@ -66,7 +66,7 @@ public class Q8 {
                 System.out.println("You Win! GG! No Re! WP!");
                 break;
             }
-            
+
             //tell player where he is on the board
             System.out.println("You are now on square " + player);
 
